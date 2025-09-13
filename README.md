@@ -26,3 +26,26 @@ Extract the **deposit amount** from a sample ATM receipt image using **computer 
 - Tesseract OCR
 - `pytesseract`
 - `re` (regular expressions)
+
+## How To Run
+### 1. Install dependencies:
+
+```pip install opencv-python pytesseract```
+
+### 2.Make sure Tesseract is installed and configured:
+
+```
+# In main.py
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+```
+
+### 3. Run the script:
+
+python main.py
+
+
+Expected output:
+
+```
+Detected Deposit Amount: RM25.00
+```
